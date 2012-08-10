@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FunFriends</string>
+    <string name="app_desc">Which of your friends are really fun?</string>
+    <string name="whosemorefun">Who\'se more fun?</string>
+</resources>

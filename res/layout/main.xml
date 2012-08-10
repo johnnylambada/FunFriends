@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:padding="6dip"
+        android:layout_height="?android:attr/listPreferredItemHeight">
+        <ImageView
+            android:id="@+id/user_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="6dip" />
+        <com.sigseg.android.funfriends.LoginButton
+            android:id="@+id/login"
+            android:src="@drawable/login_button"
+            android:layout_toRightOf="@id/user_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/whosemorefun"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+    <View
+         android:layout_width="fill_parent"
+         android:layout_height="1dip"
+         android:background="@color/grey" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dip" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp" 
+            />
+
+        <TextView
+            android:id="@+id/nOfM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="nOfM"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <WebView
+            android:id="@+id/leftWebView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/progressBar1"
+            android:layout_alignLeft="@id/progressBar1"
+            android:layout_toLeftOf="@id/nOfM"
+            android:layout_alignParentTop="true"
+			android:layout_marginRight="20dp"
+            />
+        
+        <WebView
+            android:id="@+id/rightWebView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progressBar1"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/progressBar1"
+            android:layout_toRightOf="@id/nOfM"
+			android:layout_marginLeft="20dp"
+			/>
+                    
+
+    </RelativeLayout>
+</LinearLayout>
